@@ -1,51 +1,204 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Je m'appelle Brastenhofer Célestin J'ai 20ans est voici mon porte folio">
     <link rel="stylesheet" href="styles.css">
-    <title>Brastenhofer Célestin</title>
-    <meta property="og:title" content="Brastenhofer Célestin">
+    <title>Document</title>
 </head>
 <body>
     <!-- Barre de navigation -->
     <nav>
-        <div class="logo-name">
-            <h1>Brastenhofer <span>Célestin</span></h1>
-        </div>
+        <div class="nav-logo"><h1>Brastenhofer <span class="green-background">Célestin</span></h1></div>
         <div class="nav-liste">
             <ul>
                 <li><a href="#">Profils</a></li>
-                <li><a href="#">Parcours</a></li>
-                <li><a href="#">Compétences</a></li>
-                <li><a href="#">Projets</a></li>
+                <li><a href="#parcours">Parcours</a></li>
+                <li><a href="#compétence">Compétences</a></li>
+                <li><a href="#projet">Projets</a></li>
             </ul>
         </div>
         <div class="nav-contact">
-            <button><a href="#">Contact</a></button>
+            <button class="green-background"> Contact</button>
         </div>
     </nav>
-    <!-- Section profils -->
-    <section class="Profils">
-        <div class="information-profil">
-            <div class="info-base">
-                <h2>Je m'apelle <span class="important-text">Brastenhofer Célestin</span></h2>
-                <h2>J'ai <span class="important-text">20Ans</span></h2>
+    <!-- Barre de navigation End -->
+     <!-- Profils -->
+     <section class="profils" id="">
+        <div class="section-profils">
+            <div class="profils-info">
+                <h2>Je M'appelle <span>Brastenhofer Célestin</span></h2>
+                <h2>J'ai <span>20ans</span></h2>
             </div>
-        <div class="line"></div>
-        <div class="loisir-diplome">
-            <h3>Dernier diplôme obtenue:</h3>
-            <h3 class="important-text">Bac +1 Développeur Web junior</h3>
-            <h3>Mes loisirs:</h3>
-            <h3 class="important-text">Drone FPV, l'informatique</h3>
+            <div class="ligne"></div>
+            <div class="diplome-loisir">
+                <h3>Dernier diplôme obtenue:</h3>
+                <h3 class="important-txt">Bac + 1 Développeur Web junior</h3>
+                <h3>Mes loisirs:</h3>
+                <h3 class="important-txt">Informatique , Le drone FPV , l'impression 3D</h3>    
+            </div>
+            <div class="download-btn-cv">
+                <button>Télécharger mon CV</button>
+            </div>
         </div>
-        <div class="download-cvbtn">
-            <button>Télécharger mon CV</button>
+        <div class="photo-presentation">
+            <img src="image/Celestin-brastenhofer.webp" alt="Brastenhofer Célestin" width="">
         </div>
+     </section>
+     <!-- Profils END -->
+      <section class="parcours" id="parcours">
+        <div class="grid-parcours">
+            <div class="colonne">
+                <header>
+                    <h2>Scolaire</h2>
+                </header>
+                <div class="content-tableau">
+                    <div class="box">
+                      <div class="information-date">
+                        <div class="information"><h3>Cname de Saverne</h3></div>
+                        <div class="date"><h3>2023</h3></div>
+                      </div>
+                      <div class="description-post">
+                        <p>Bac +1 intégrateur Web junior</p>
+                      </div>
+                      <div class="statut-diplome">
+                        <h4>Bac +1 Obtenue</h4>
+                      </div>
+                    </div>
+                    <div class="box">
+                        <div class="information-date">
+                          <div class="information"><h3>Cname de Saverne</h3></div>
+                          <div class="date"><h3>2023</h3></div>
+                        </div>
+                        <div class="description-post">
+                          <p>Bac +1 intégrateur Web junior</p>
+                        </div>
+                        <div class="statut-diplome">
+                          <h4>Bac +1 Obtenue</h4>
+                        </div>
+                      </div>
+                      <div class="box">
+                        <div class="information-date">
+                          <div class="information"><h3>Cname de Saverne</h3></div>
+                          <div class="date"><h3>2023</h3></div>
+                        </div>
+                        <div class="description-post">
+                          <p>Bac +1 intégrateur Web junior</p>
+                        </div>
+                        <div class="statut-diplome">
+                          <h4>Bac +1 Obtenue</h4>
+                        </div>
+                      </div>
+
+                </div>
+            </div>
+            <div class="colonne">
+                <header>
+                    <h2>Professionnel</h2>
+                </header>
+                <div class="content-tableau">
+                    <div class="box active">
+                        <div class="information-date">
+                          <div class="information"><h3>Ineos Automotive / Hambach 57910</h3></div>
+                          <div class="date"><h3>2023-2024</h3></div>
+                        </div>
+                        <div class="description-post">
+                          <p>Intérimaire</p>
+                        </div>
+                        <div class="statut-diplome">
+                          <h4>Service: Opérateur de Production</h4>
+                        </div>
+                      </div>
+                      <div class="box">
+                        <div class="information-date">
+                          <div class="information"><h3>Ineos Automotive / Hambach 57910</h3></div>
+                          <div class="date"><h3>2023-2024</h3></div>
+                        </div>
+                        <div class="description-post">
+                          <p>Intérimaire</p>
+                        </div>
+                        <div class="statut-diplome">
+                          <h4>Service: Opérateur de Production</h4>
+                        </div>
+                      </div>        
+                      <div class="box">
+                        <div class="information-date">
+                          <div class="information"><h3>Ineos Automotive / Hambach 57910</h3></div>
+                          <div class="date"><h3>2023-2024</h3></div>
+                        </div>
+                        <div class="description-post">
+                          <p>Intérimaire</p>
+                        </div>
+                        <div class="statut-diplome">
+                          <h4>Service: Opérateur de Production</h4>
+                        </div>
+                      </div>
+                      <div class="box">
+                        <div class="information-date">
+                          <div class="information"><h3>Ineos Automotive / Hambach 57910</h3></div>
+                          <div class="date"><h3>2023-2024</h3></div>
+                        </div>
+                        <div class="description-post">
+                          <p>Intérimaire</p>
+                        </div>
+                        <div class="statut-diplome">
+                          <h4>Service: Opérateur de Production</h4>
+                        </div>
+                      </div>
+                      <div class="box">
+                        <div class="information-date">
+                          <div class="information"><h3>Ineos Automotive / Hambach 57910</h3></div>
+                          <div class="date"><h3>2023-2024</h3></div>
+                        </div>
+                        <div class="description-post">
+                          <p>Intérimaire</p>
+                        </div>
+                        <div class="statut-diplome">
+                          <h4>Service: Opérateur de Production</h4>
+                        </div>
+                      </div>
+                      <div class="box">
+                        <div class="information-date">
+                          <div class="information"><h3>Ineos Automotive / Hambach 57910</h3></div>
+                          <div class="date"><h3>2023-2024</h3></div>
+                        </div>
+                        <div class="description-post">
+                          <p>Intérimaire</p>
+                        </div>
+                        <div class="statut-diplome">
+                          <h4>Service: Opérateur de Production</h4>
+                        </div>
+                      </div>
+                      <div class="box">
+                        <div class="information-date">
+                          <div class="information"><h3>Ineos Automotive / Hambach 57910</h3></div>
+                          <div class="date"><h3>2023-2024</h3></div>
+                        </div>
+                        <div class="description-post">
+                          <p>Intérimaire</p>
+                        </div>
+                        <div class="statut-diplome">
+                          <h4>Service: Opérateur de Production</h4>
+                        </div>
+                      </div>
+                      <div class="box">
+                        <div class="information-date">
+                          <div class="information"><h3>Ineos Automotive / Hambach 57910</h3></div>
+                          <div class="date"><h3>2023-2024</h3></div>
+                        </div>
+                        <div class="description-post">
+                          <p>Intérimaire</p>
+                        </div>
+                        <div class="statut-diplome">
+                          <h4>Service: Opérateur de Production</h4>
+                        </div>
+                      </div>
+                  
+                  
+                </div>
+            </div>
+            <!-- education END -->
         </div>
-        <div class="profil-picture"><img src="image/Celestin-brastenhofer.webp" alt="Celestin brastenhofer"></div>
-    </section>
-    
+      </section>
 </body>
 </html>
