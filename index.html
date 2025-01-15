@@ -1,53 +1,46 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <script src="app.js"></script>
+    <title>Brastenhofer Célestin</title>
 </head>
 <body>
-    <!-- Barre de navigation -->
-    <nav>
-        <div class="nav-logo"><h1>Brastenhofer <span class="green-background">Célestin</span></h1></div>
-        <div class="nav-liste">
+    <nav class="Navbar">
+        <div class="logo_nav"><h1>Brastenhofer <span class="background_effect">Célestin</span></h1></div>
+        <div class="liste_content">
             <ul>
-                <li><a href="#">Profils</a></li>
-                <li><a href="#parcours">Parcours</a></li>
-                <li><a href="#compétence">Compétences</a></li>
-                <li><a href="#projet">Projets</a></li>
+                <li><a class="active" href="#">Profils</a></li>
+                <li><a href="#">Parcours</a></li>
+                <li><a href="#">Compétences</a></li>
+                <li><a href="#">Projets</a></li>
             </ul>
         </div>
-        <div class="nav-contact">
-            <button class="green-background"> Contact</button>
-        </div>
+        <div class="button_contact"><button onclick="location.href='#contact'">Contact</button></div>
     </nav>
-    <!-- Barre de navigation End -->
-     <!-- Profils -->
-     <section class="profils" id="">
-        <div class="section-profils">
-            <div class="profils-info">
-                <h2>Je M'appelle <span>Brastenhofer Célestin</span></h2>
-                <h2>J'ai <span>20ans</span></h2>
-            </div>
-            <div class="ligne"></div>
-            <div class="diplome-loisir">
-                <h3>Dernier diplôme obtenue:</h3>
-                <h3 class="important-txt">Bac + 1 Développeur Web junior</h3>
-                <h3>Mes loisirs:</h3>
-                <h3 class="important-txt">Informatique , Le drone FPV , l'impression 3D</h3>    
-            </div>
-            <div class="download-btn-cv">
-                <button>Télécharger mon CV</button>
-            </div>
+    <section class="profils">
+       <div class="profils_contenaire">
+        <div class="info_content">
+                <div class="info_name_age"><h2>Je M'apelle <span class="important upsize">Brastenhofer Célestin</span></h2></div>
+                <div class="info_name_age"><h2>J'ai <span class="important upsize">20ans</span></h2></div>
+                <div class="line"></div>
+                <div class="diplome-loisir">
+                    <h3>Dernier diplôme obtenue:</h3>
+                    <h3 class="important">Bac +1 Intégrateur Web Junior</h3>
+                    <br>
+                    <h3>Mon passe temps</h3>
+                    <h3 class="important">drone FPV , impression 3D , Bricoler de nouvelle chose </h3>
+                </div>
+                <div class="btn_cv"><button>Télcharger mon CV</button></div>
         </div>
-        <div class="photo-presentation">
-            <img src="image/Celestin-brastenhofer.webp" alt="Brastenhofer Célestin" width="">
+        <div class="imgprofil_content">
+            <div class="img_profils"><img src="image/Celestin-brastenhofer.webp" alt="" ></div>
         </div>
-     </section>
-     <!-- Profils END -->
-      <!-- Parcours -->
-      <section class="parcours" id="parcours">
+       </div>
+    </section>
+    <section class="parcours" id="parcours">
         <div class="grid-parcours">
             <div class="colonne">
                 <header>
@@ -200,59 +193,269 @@
             </div>
             <!-- education END -->
         </div>
-      </section>
-      <!-- Parcours End -->
-       <section class="competence">
-        <div class="language-other">
-          <div class="langage">
-            <div class="content-langage">
-              <div class="comp-title">
-                <h2>Language de programmation</h2>
-              </div>
-              <div class="comp-list">
-                <ul>
-                  <li>Html</li>
-                  <li>Css</li>
-                </ul>
-              </div>
+        <div class="lireplus"><button id="afficherplus">Afficher plus</button></div>
+    </section>
+    <section class="competence">
+      <div class="contenaire">
+        <div class="content_liste">
+          <div class="liste_grid">
+            <div class="titre_liste_grid">
+              <h2>Langage</h2>
             </div>
-            <div class="content-apprentissage">
-              <div class="apprentissage-title">
-                <h2>En cours d'apprentissage</h2></div>
-              <div class="list-apprentissage">
-                <ul>
-                  <li>Javascript</li>
-                  <li>PHP</li>
-                  <li>SQL</li>
-                </ul>
-              </div>
+            <div class="content_liste_list">
+              <ul>
+                <li><p>Html</p></li>
+                <li><p>Css</p></li>
+              </ul>
             </div>
           </div>
-          <div class="Autre">
-            <div class="autre-title"><h2>Autres</h2></div>
-            <div class="liste-autre">
+          <div class="liste_grid">
+            <div class="titre_liste_grid">
+              <h2>Informatique</h2>
+            </div>
+            <div class="content_liste_list">
               <ul>
-                <li>Permis B</li>
-                <li>Montage Ordinateur</li>
-                <li>Montage Drone FPV</li>
-                <li>Partage de fichier en réseaux</li>
-                <li>Mise en réseaux d'une imprimante</li>
+                <li><p>Montage Ordinateur</p></li>
+                <li><p>Partage de fichier en réseaux</p></li>
+                <li><p>Mise en réseaux d'une imprimante</p></li>
+              </ul>
+            </div>
+          </div>
+          <div class="liste_grid">
+            <div class="titre_liste_grid">
+              <h2>Autre</h2>
+            </div>
+            <div class="content_liste_list">
+              <ul>
+                <li><p>Permis B</p></li>
+                <li><p>Montage de Drone FPV</p></li>
+                <li><p>impression 3D </p></li>
               </ul>
             </div>
           </div>
         </div>
-        <div class="logiciel-utiliser">
-          <div class="title-logiciel"><h2>Logiciel</h2></div>
-          <div class="liste-logiciel">
-            <ul>
-              <li><img src="image/Figma.webp" alt="Figma"></li>
-              <li><img src="image/Visual-Studio-Code.webp" alt="Visual Studio Code"></li>
-              <li><img src="image/Wamp-Server.webp" alt="Wamp server"></li>
-              <li><img src="image/MySql.webp" alt="MySql"></li>
+        <div class="content_logiciel">
+          <div class="liste_image">
+            <div class="titre_image_grid">
+              <h2>Logiciel</h2>
+            </div>
+            <div class="carousel">
+              <div class="carousel-inner">
+                  <!-- Groupe 1 -->
+                  <div class="carousel-group">
+                      <div class="contenaire_logiciel">
+                          <div class="img_div">
+                            <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300" width="1667" height="2500"><style type="text/css">.st0{fill:#0acf83}.st1{fill:#a259ff}.st2{fill:#f24e1e}.st3{fill:#ff7262}.st4{fill:#1abcfe}</style><title>Figma.logo</title><desc>Created using Figma</desc><path id="path0_fill" class="st0" d="M50 300c27.6 0 50-22.4 50-50v-50H50c-27.6 0-50 22.4-50 50s22.4 50 50 50z"/><path id="path1_fill" class="st1" d="M0 150c0-27.6 22.4-50 50-50h50v100H50c-27.6 0-50-22.4-50-50z"/><path id="path1_fill_1_" class="st2" d="M0 50C0 22.4 22.4 0 50 0h50v100H50C22.4 100 0 77.6 0 50z"/><path id="path2_fill" class="st3" d="M100 0h50c27.6 0 50 22.4 50 50s-22.4 50-50 50h-50V0z"/><path id="path3_fill" class="st4" d="M200 150c0 27.6-22.4 50-50 50s-50-22.4-50-50 22.4-50 50-50 50 22.4 50 50z"/></svg>
+                          </div>
+                          <div class="logiciel_titre">
+                              <p>Figma</p>
+                          </div>
+                      </div>
+                      <div class="contenaire_logiciel">
+                          <div class="img_div">
+                            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="100" height="100">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M70.9119 99.3171C72.4869 99.9307 74.2828 99.8914 75.8725 99.1264L96.4608 89.2197C98.6242 88.1787 100 85.9892 100 83.5872V16.4133C100 14.0113 98.6243 11.8218 96.4609 10.7808L75.8725 0.873756C73.7862 -0.130129 71.3446 0.11576 69.5135 1.44695C69.252 1.63711 69.0028 1.84943 68.769 2.08341L29.3551 38.0415L12.1872 25.0096C10.589 23.7965 8.35363 23.8959 6.86933 25.2461L1.36303 30.2549C-0.452552 31.9064 -0.454633 34.7627 1.35853 36.417L16.2471 50.0001L1.35853 63.5832C-0.454633 65.2374 -0.452552 68.0938 1.36303 69.7453L6.86933 74.7541C8.35363 76.1043 10.589 76.2037 12.1872 74.9905L29.3551 61.9587L68.769 97.9167C69.3925 98.5406 70.1246 99.0104 70.9119 99.3171ZM75.0152 27.2989L45.1091 50.0001L75.0152 72.7012V27.2989Z" fill="white"/>
+                              </mask>
+                              <g mask="url(#mask0)">
+                              <path d="M96.4614 10.7962L75.8569 0.875542C73.4719 -0.272773 70.6217 0.211611 68.75 2.08333L1.29858 63.5832C-0.515693 65.2373 -0.513607 68.0937 1.30308 69.7452L6.81272 74.754C8.29793 76.1042 10.5347 76.2036 12.1338 74.9905L93.3609 13.3699C96.086 11.3026 100 13.2462 100 16.6667V16.4275C100 14.0265 98.6246 11.8378 96.4614 10.7962Z" fill="#0065A9"/>
+                              <g filter="url(#filter0_d)">
+                              <path d="M96.4614 89.2038L75.8569 99.1245C73.4719 100.273 70.6217 99.7884 68.75 97.9167L1.29858 36.4169C-0.515693 34.7627 -0.513607 31.9063 1.30308 30.2548L6.81272 25.246C8.29793 23.8958 10.5347 23.7964 12.1338 25.0095L93.3609 86.6301C96.086 88.6974 100 86.7538 100 83.3334V83.5726C100 85.9735 98.6246 88.1622 96.4614 89.2038Z" fill="#007ACC"/>
+                              </g>
+                              <g filter="url(#filter1_d)">
+                              <path d="M75.8578 99.1263C73.4721 100.274 70.6219 99.7885 68.75 97.9166C71.0564 100.223 75 98.5895 75 95.3278V4.67213C75 1.41039 71.0564 -0.223106 68.75 2.08329C70.6219 0.211402 73.4721 -0.273666 75.8578 0.873633L96.4587 10.7807C98.6234 11.8217 100 14.0112 100 16.4132V83.5871C100 85.9891 98.6234 88.1786 96.4586 89.2196L75.8578 99.1263Z" fill="#1F9CF0"/>
+                              </g>
+                              <g style="mix-blend-mode:overlay" opacity="0.25">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M70.8511 99.3171C72.4261 99.9306 74.2221 99.8913 75.8117 99.1264L96.4 89.2197C98.5634 88.1787 99.9392 85.9892 99.9392 83.5871V16.4133C99.9392 14.0112 98.5635 11.8217 96.4001 10.7807L75.8117 0.873695C73.7255 -0.13019 71.2838 0.115699 69.4527 1.44688C69.1912 1.63705 68.942 1.84937 68.7082 2.08335L29.2943 38.0414L12.1264 25.0096C10.5283 23.7964 8.29285 23.8959 6.80855 25.246L1.30225 30.2548C-0.513334 31.9064 -0.515415 34.7627 1.29775 36.4169L16.1863 50L1.29775 63.5832C-0.515415 65.2374 -0.513334 68.0937 1.30225 69.7452L6.80855 74.754C8.29285 76.1042 10.5283 76.2036 12.1264 74.9905L29.2943 61.9586L68.7082 97.9167C69.3317 98.5405 70.0638 99.0104 70.8511 99.3171ZM74.9544 27.2989L45.0483 50L74.9544 72.7012V27.2989Z" fill="url(#paint0_linear)"/>
+                              </g>
+                              </g>
+                              <defs>
+                              <filter id="filter0_d" x="-8.39411" y="15.8291" width="116.727" height="92.2456" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                              <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+                              <feOffset/>
+                              <feGaussianBlur stdDeviation="4.16667"/>
+                              <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                              <feBlend mode="overlay" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                              </filter>
+                              <filter id="filter1_d" x="60.4167" y="-8.07558" width="47.9167" height="116.151" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                              <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+                              <feOffset/>
+                              <feGaussianBlur stdDeviation="4.16667"/>
+                              <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                              <feBlend mode="overlay" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                              </filter>
+                              <linearGradient id="paint0_linear" x1="49.9392" y1="0.257812" x2="49.9392" y2="99.7423" gradientUnits="userSpaceOnUse">
+                              <stop stop-color="white"/>
+                              <stop offset="1" stop-color="white" stop-opacity="0"/>
+                              </linearGradient>
+                              </defs>
+                              </svg>
+                              
+                          </div>
+                          <div class="logiciel_titre">
+                              <p>Visual Studio Code</p>
+                          </div>
+                      </div>
+                      <div class="contenaire_logiciel">
+                          <div class="img_div">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                         <style type="text/css">
+                           .st0{fill:#FF0099;}
+                         </style>
+                         <g>
+                           <path class="st0" d="M425.6,313.5c0,61.6-49.9,111.5-111.5,111.5H197.9c-61.6,0-111.5-49.9-111.5-111.5v-39.8H19v45.7
+                             C19,414.7,96.3,492,191.6,492h128.8c95.3,0,172.6-77.3,172.6-172.6v-45.7h-67.4V313.5z"/>
+                           <path class="st0" d="M86.4,199.5C86.4,137.9,136.3,88,197.9,88h116.2c61.6,0,111.5,49.9,111.5,111.5v41H493v-46.9
+                             C493,98.3,415.7,21,320.4,21H191.6C96.3,21,19,98.3,19,193.6v46.9h67.4V199.5z"/>
+                           <path class="st0" d="M323,122.6v186.6c0,8.9-7.2,16.1-16.1,16.1c-8.9,0-16.1-7.2-16.1-16.1v-68.7h-69.6v68.7
+                             c0,8.9-7.2,16.1-16.1,16.1h0c-8.9,0-16.1-7.2-16.1-16.1V122.6c-39.1,6.5-68.9,40.4-68.9,81.3v105.2c0,45.5,36.9,82.4,82.4,82.4h5.8
+                             c11.2,0,21.8-2.2,31.5-6.3c5.7-2.4,11.1-5.4,16.1-8.9c5,3.5,10.4,6.5,16.1,8.9c9.7,4,20.4,6.3,31.5,6.3h5.8
+                             c45.5,0,82.4-36.9,82.4-82.4V203.9C391.9,163,362.1,129.1,323,122.6z"/>
+                         </g>
+                         </svg>
+                          </div>
+                          <div class="logiciel_titre">
+                              <p>WampServer</p>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- Groupe 2 -->
+                  <div class="carousel-group">
+                      <div class="contenaire_logiciel">
+                          <div class="img_div">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><defs><linearGradient id="filezilla-plain-a" gradientUnits="userSpaceOnUse" x1="63.997" y1="15.543" x2="63.997" y2="114.424"><stop offset="0" stop-color="#BF0000"/><stop offset="1" stop-color="#8F0000"/></linearGradient></defs><path d="M4.285 0c0 1.129-.457 2.234-1.254 3.031S1.129 4.285 0 4.285v5.652a4.29 4.29 0 014.285 4.285A4.29 4.29 0 010 18.508v5.648c2.363 0 4.285 1.926 4.285 4.285S2.363 32.73 0 32.73v5.648a4.29 4.29 0 014.285 4.289A4.29 4.29 0 010 46.953v5.652a4.29 4.29 0 014.285 4.285A4.29 4.29 0 010 61.176v5.652a4.286 4.286 0 014.285 4.281A4.29 4.29 0 010 75.398v5.648a4.29 4.29 0 014.285 4.283A4.29 4.29 0 010 89.617v5.652a4.29 4.29 0 014.285 4.285A4.29 4.29 0 010 103.84v5.652a4.29 4.29 0 014.285 4.285A4.29 4.29 0 010 118.063v5.652c1.129 0 2.234.457 3.031 1.254s1.254 1.902 1.254 3.031h5.652a4.29 4.29 0 014.285-4.285A4.29 4.29 0 0118.508 128h5.648a4.293 4.293 0 014.289-4.285A4.29 4.29 0 0132.73 128h5.648a4.29 4.29 0 014.283-4.285A4.29 4.29 0 0146.949 128h5.652a4.29 4.29 0 014.285-4.285A4.29 4.29 0 0161.172 128h5.652a4.29 4.29 0 014.285-4.285A4.29 4.29 0 0175.395 128h5.652a4.29 4.29 0 014.285-4.285A4.29 4.29 0 0189.617 128h5.648a4.293 4.293 0 014.289-4.285A4.29 4.29 0 01103.84 128h5.646a4.29 4.29 0 014.285-4.285 4.29 4.29 0 014.285 4.285h5.656c0-1.129.457-2.234 1.254-3.031s1.902-1.254 3.031-1.254v-5.648a4.293 4.293 0 01-4.285-4.289 4.29 4.29 0 014.285-4.285v-5.646a4.29 4.29 0 01-4.285-4.285A4.29 4.29 0 01128 95.273v-5.652a4.29 4.29 0 01-4.285-4.285A4.29 4.29 0 01128 81.051v-5.652a4.29 4.29 0 01-4.285-4.285A4.29 4.29 0 01128 66.828V61.18a4.29 4.29 0 01-4.285-4.285A4.29 4.29 0 01128 52.609v-5.652a4.29 4.29 0 01-4.285-4.285A4.29 4.29 0 01128 38.383V32.73a4.29 4.29 0 01-4.285-4.285A4.29 4.29 0 01128 24.16v-5.648a4.293 4.293 0 01-4.285-4.289A4.29 4.29 0 01128 9.941V4.285c-1.129 0-2.234-.457-3.031-1.254S123.715 1.129 123.715 0h-5.652a4.29 4.29 0 01-4.285 4.285A4.29 4.29 0 01109.492 0h-5.652a4.29 4.29 0 01-4.285 4.285A4.29 4.29 0 0195.27 0h-5.648a4.29 4.29 0 01-4.283 4.285A4.3 4.3 0 0181.047 0h-5.648a4.29 4.29 0 01-4.285 4.285A4.29 4.29 0 0166.828 0h-5.652a4.29 4.29 0 01-4.285 4.285A4.29 4.29 0 0152.605 0h-5.652a4.29 4.29 0 01-4.285 4.285A4.29 4.29 0 0138.383 0H32.73a4.29 4.29 0 01-4.285 4.285A4.29 4.29 0 0124.16 0h-5.648c0 2.363-1.926 4.285-4.285 4.285S9.938 2.363 9.938 0H4.285zm30.762 18.836H91l-3.57 16.785H48.5l-3.332 15.594h63.871l-2.738 11.189-34.152 33.215c3.094.476 6.07 1.191 9.281 1.191 7.816 0 16.801-2.383 22.875-4.883l-3.121 14.645c-8.93 4.286-14.406 4.646-19.754 4.646-5.828 0-11.426-1.906-17.141-1.906-3.215 0-7.856.239-10.715 2.141l-6.191-10.949 35.234-34.883H42.07l-7.738 36.309H17.43l17.617-83.094z" fill="url(#filezilla-plain-a)"/></svg>
 
-            </ul>
+                          </div>
+                          <div class="logiciel_titre">
+                              <p>FileZila</p>
+                          </div>
+                      </div>
+                      <div class="contenaire_logiciel">
+                          <div class="img_div">
+                              <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path d="M-18.458 6.58h191.151v132.49H-18.458V6.58z" fill="none"/><path d="M40.054 113.583h-5.175c-.183-8.735-.687-16.947-1.511-24.642h-.046l-7.879 24.642h-3.94l-7.832-24.642h-.045c-.581 7.388-.947 15.602-1.099 24.642H7.81c.304-10.993 1.068-21.299 2.289-30.919h6.414l7.465 22.719h.046l7.511-22.719h6.137c1.344 11.268 2.138 21.575 2.382 30.919M62.497 90.771c-2.107 11.434-4.887 19.742-8.337 24.928-2.688 3.992-5.633 5.99-8.84 5.99-.855 0-1.91-.258-3.16-.77v-2.757c.611.088 1.328.138 2.152.138 1.498 0 2.702-.412 3.62-1.238 1.098-1.006 1.647-2.137 1.647-3.388 0-.858-.428-2.612-1.282-5.268L42.618 90.77h5.084l4.076 13.19c.916 2.995 1.298 5.086 1.145 6.277 2.229-5.953 3.786-12.444 4.673-19.468h4.901v.002z" fill="#5d87a1"/><path d="M131.382 113.583h-14.7V82.664h4.945v27.113h9.755v3.806zM112.834 114.33l-5.684-2.805c.504-.414.986-.862 1.42-1.381 2.416-2.838 3.621-7.035 3.621-12.594 0-10.229-4.014-15.346-12.045-15.346-3.938 0-7.01 1.298-9.207 3.895-2.414 2.84-3.619 7.022-3.619 12.551 0 5.435 1.068 9.422 3.205 11.951 1.955 2.291 4.902 3.438 8.843 3.438 1.47 0 2.819-.18 4.048-.543l7.4 4.308 2.018-3.474zm-18.413-6.934c-1.252-2.014-1.878-5.248-1.878-9.707 0-7.785 2.365-11.682 7.1-11.682 2.475 0 4.289.932 5.449 2.792 1.25 2.017 1.879 5.222 1.879 9.619 0 7.849-2.367 11.774-7.099 11.774-2.476.001-4.29-.928-5.451-2.796M85.165 105.013c0 2.622-.962 4.773-2.884 6.458-1.924 1.678-4.504 2.519-7.737 2.519-3.024 0-5.956-.966-8.794-2.888l1.329-2.655c2.442 1.223 4.653 1.831 6.638 1.831 1.863 0 3.319-.413 4.375-1.232 1.055-.822 1.684-1.975 1.684-3.433 0-1.837-1.281-3.407-3.631-4.722-2.167-1.19-6.501-3.678-6.501-3.678-2.349-1.712-3.525-3.55-3.525-6.578 0-2.506.877-4.529 2.632-6.068 1.757-1.545 4.024-2.315 6.803-2.315 2.87 0 5.479.769 7.829 2.291l-1.192 2.656c-2.01-.854-3.994-1.281-5.951-1.281-1.585 0-2.809.381-3.66 1.146-.858.762-1.387 1.737-1.387 2.933 0 1.828 1.308 3.418 3.722 4.759 2.196 1.192 6.638 3.723 6.638 3.723 2.409 1.709 3.612 3.53 3.612 6.534" fill="#f8981d"/><path d="M137.59 72.308c-2.99-.076-5.305.225-7.248 1.047-.561.224-1.453.224-1.531.933.303.3.338.784.601 1.198.448.747 1.229 1.752 1.942 2.276.783.6 1.569 1.194 2.393 1.717 1.453.899 3.1 1.422 4.516 2.318.825.521 1.645 1.195 2.471 1.756.406.299.666.784 1.193.971v-.114c-.264-.336-.339-.822-.598-1.196l-1.122-1.082c-1.084-1.456-2.431-2.727-3.884-3.771-1.196-.824-3.812-1.944-4.297-3.322l-.076-.076c.822-.077 1.797-.375 2.578-.604 1.271-.335 2.43-.259 3.734-.594.6-.15 1.195-.338 1.797-.523v-.337c-.676-.673-1.158-1.567-1.869-2.203-1.902-1.643-3.998-3.25-6.164-4.595-1.16-.749-2.652-1.231-3.887-1.868-.445-.225-1.195-.336-1.457-.71-.67-.822-1.047-1.904-1.533-2.877-1.08-2.053-2.129-4.331-3.061-6.502-.674-1.456-1.084-2.91-1.906-4.257-3.85-6.35-8.031-10.196-14.457-13.971-1.381-.786-3.024-1.121-4.779-1.533l-2.803-.148c-.598-.262-1.197-.973-1.719-1.309-2.132-1.344-7.621-4.257-9.189-.411-1.01 2.431 1.494 4.821 2.354 6.054.635.856 1.458 1.83 1.902 2.802.263.635.337 1.309.6 1.98.598 1.644 1.157 3.473 1.943 5.007.41.782.857 1.604 1.381 2.312.3.414.822.597.936 1.272-.521.744-.562 1.867-.861 2.801-1.344 4.221-.819 9.45 1.086 12.552.596.934 2.018 2.99 3.92 2.202 1.684-.672 1.311-2.801 1.795-4.668.111-.451.038-.747.262-1.043v.073c.521 1.045 1.047 2.052 1.53 3.1 1.159 1.829 3.177 3.735 4.858 5.002.895.676 1.604 1.832 2.725 2.245V74.1h-.074c-.227-.335-.559-.485-.857-.745-.674-.673-1.42-1.495-1.943-2.241-1.566-2.093-2.952-4.41-4.182-6.801-.602-1.16-1.121-2.428-1.606-3.586-.226-.447-.226-1.121-.601-1.346-.562.821-1.381 1.532-1.791 2.538-.711 1.609-.785 3.588-1.049 5.646l-.147.072c-1.19-.299-1.604-1.53-2.056-2.575-1.119-2.654-1.307-6.914-.336-9.976.26-.783 1.385-3.249.936-3.995-.225-.715-.973-1.122-1.383-1.685-.482-.708-1.01-1.604-1.346-2.39-.896-2.091-1.347-4.408-2.312-6.498-.451-.974-1.234-1.982-1.868-2.879-.712-1.008-1.495-1.718-2.058-2.913-.186-.411-.447-1.083-.148-1.53.073-.3.225-.412.523-.487.484-.409 1.867.111 2.352.336 1.385.56 2.543 1.083 3.699 1.867.523.375 1.084 1.085 1.755 1.272h.786c1.193.26 2.538.072 3.661.41 1.979.636 3.772 1.569 5.38 2.576 4.893 3.103 8.928 7.512 11.652 12.778.447.858.637 1.644 1.045 2.539.787 1.832 1.76 3.7 2.541 5.493.785 1.755 1.533 3.547 2.654 5.005.559.784 2.805 1.195 3.812 1.606.745.335 1.905.633 2.577 1.044 1.271.783 2.537 1.682 3.732 2.543.595.448 2.465 1.382 2.576 2.13M99.484 39.844a5.82 5.82 0 0 0-1.529.188v.075h.072c.301.597.824 1.011 1.197 1.532.301.599.562 1.193.857 1.791l.072-.074c.527-.373.789-.971.789-1.868-.227-.264-.262-.522-.451-.784-.22-.374-.705-.56-1.007-.86" fill="#5d87a1"/><path d="M141.148 113.578h.774v-3.788h-1.161l-.947 2.585-1.029-2.585h-1.118v3.788h.731v-2.882h.041l1.078 2.882h.557l1.074-2.882v2.882zm-6.235 0h.819v-3.146h1.072v-.643h-3.008v.643h1.115l.002 3.146z" fill="#f8981d"/></svg>
+                          </div>
+                          <div class="logiciel_titre">
+                              <p>MySql</p>
+                          </div>
+                      </div>
+                      <div class="contenaire_logiciel">
+                          <div class="img_div">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="64px" height="64px" fill-rule="nonzero"><defs><linearGradient x1="32" y1="8" x2="32" y2="56" gradientUnits="userSpaceOnUse" id="color-1"><stop offset="0" stop-color="#000000"></stop><stop offset="1" stop-color="#0a0a0a"></stop></linearGradient><linearGradient x1="32" y1="12" x2="32" y2="52" gradientUnits="userSpaceOnUse" id="color-2"><stop offset="0" stop-color="#0ca6df"></stop><stop offset="1" stop-color="#0ca6df"></stop></linearGradient></defs><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(4,4)"><path d="M37.586,56h-26.586c-1.654,0 -3,-1.346 -3,-3v-26.586c0,-0.801 0.312,-1.555 0.879,-2.121l15.414,-15.414c0.566,-0.566 1.32,-0.879 2.121,-0.879h26.586c1.654,0 3,1.346 3,3v26.586c0,0.801 -0.313,1.555 -0.879,2.121l-15.414,15.414c-0.566,0.567 -1.32,0.879 -2.121,0.879zM26.414,10c-0.263,0 -0.521,0.106 -0.707,0.293l-15.414,15.414c-0.187,0.187 -0.293,0.444 -0.293,0.707v26.586c0,0.552 0.448,1 1,1h26.586c0.263,0 0.521,-0.106 0.707,-0.293l15.414,-15.414c0.187,-0.187 0.293,-0.444 0.293,-0.707v-26.586c0,-0.552 -0.448,-1 -1,-1z" fill="url(#color-1)"></path><path d="M26.829,12l-14.829,14.829v25.171h25.171l14.829,-14.829v-25.171zM42,25h-10c-2.761,0 -5,2.239 -5,5c0,2.761 2.239,5 5,5h10v6h-10c-6.075,0 -11,-4.925 -11,-11c0,-6.075 4.925,-11 11,-11h10z" fill="url(#color-2)"></path></g></g></svg>
+                          </div>
+                          <div class="logiciel_titre">
+                              <p>CuraSlicer</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- Boutons de navigation -->
+              <button class="carousel-btn prev-btn" onclick="slideCarousel(-1)">&#8249;</button>
+              <button class="carousel-btn next-btn" onclick="slideCarousel(1)">&#8250;</button>
+          </div>
+          
           </div>
         </div>
-       </section>
+      </div>
+    </section>
+    <section class="projet">
+      <div class="content_projet">
+        <div class="box_projet">
+          <div class="titre_projet"><h2>Réalisation D'une borne d'arcade</h2></div>
+          <div class="image_projet">
+            <svg preserveAspectRatio="xMinYMin meet" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 170" shape-rendering="crispEdges"><path d="M40 0h20v5H40V0zm-5 5h5v25h-5V5z" fill="#FFF"/><path d="M40 5h15v5H45v10h-5V5z" fill="#192B3E"/><path d="M55 5h5v5h-5V5z"/><path d="M60 5h15v5H60V5z" fill="#FFF"/><path d="M45 10h15v15H50v-5h-5V10z" fill="#FF993E"/><path d="M60 10h5v5h-5v-5z" fill="#192B3E"/><path d="M65 10h10v5H65v-5z"/><path d="M75 10h15v5H75v-5z" fill="#FFF"/><path d="M60 15h5v15h-5V15z" fill="#69B2FF"/><path d="M65 15h10v15H65V15z" fill="#FF993E"/><path d="M75 15h5v5h-5v-5z" fill="#192B3E"/><path d="M80 15h10v5H80v-5z"/><path d="M90 15h20v5H90v-5z" fill="#FFF"/><path d="M40 20h5v5h15v5H50v5h-5v-5h-5V20z"/><path d="M45 20h5v5h-5v-5z" fill="#3F6B99"/><path d="M75 20h5v15h-5V20z" fill="#69B2FF"/><path d="M80 20h5v15h-5V20z" fill="#FF993E"/><path d="M85 20h5v5h15v10h-5v5H90v-5h-5V20z" fill="#69B2FF"/><path d="M90 20h5v5h-5v-5z" fill="#192B3E"/><path d="M95 20h15v5H95v-5z"/><path d="M110 20h10v5h-10v-5z" fill="#FFF"/><path d="M105 25h5v5h-5v-5z" fill="#192B3E"/><path d="M110 25h10v5h-10v-5z"/><path d="M120 25h5v5h-5v-5zm-80 5h5v5h-5v-5z" fill="#FFF"/><path d="M50 30h10v5h15v5h15v5h15v5h5v5h5v45h-5v5h-5v5h-5v-5h-5v5h5v5h-5v5H85v-5H70v-5H55v-5h5v-5h-5V85h5V40h-5v-5h-5v-5z" fill="#192B3E"/><path d="M60 30h15v5H60v-5zm45 0h5v10h-5V30z"/><path d="M110 30h10v5h5v5h5v5h5v95h-5v5h-10v5h-10v5h-10v5h-5v-40h5v-5h5v-5h5v-5h10V55h-5v-5h-5V30z" fill="#3F6B99"/><path d="M120 30h5v5h-5v-5z"/><path d="M125 30h5v5h-5v-5zm-80 5h5v5h-5v-5z" fill="#FFF"/><path d="M50 35h5v5h-5v-5zm25 0h15v5H75v-5z"/><path d="M100 35h5v5h-5v-5z" fill="#3F6B99"/><path d="M125 35h5v5h-5v-5z"/><path d="M130 35h5v5h-5v-5zm-80 5h5v40h-5V40z" fill="#FFF"/><path d="M55 40h5v45H50v-5h5V40zm35 0h15v5H90v-5z"/><path d="M105 40h5v5h-5v-5z" fill="#192B3E"/><path d="M130 40h5v5h-5v-5z"/><path d="M135 40h5v5h-5v-5z" fill="#FFF"/><path d="M70 45h5v5h-5v-5z" fill="#3F6B99"/><path d="M75 45h5v5h-5v-5zm30 0h5v5h-5v-5zm30 0h5v95h-5V45z"/><path d="M140 45h5v95h-5V45z" fill="#FFF"/><path d="M65 50h5v10h-5V50z" fill="#3F6B99"/><path d="M70 50h10v5h-5v10h-5V50z" fill="#FFF5E4"/><path d="M80 50h15v5H80v-5zm30 0h5v5h-5v-5z"/><path d="M75 55h20v5H75v-5z" fill="#FFB73E"/><path d="M95 55h10v5H95v-5zm20 0h5v45h-5V55zm-50 5h5v25h-5V60z"/><path d="M75 60h5v5h-5v-5z" fill="#3F6B99"/><path d="M80 60h25v5H80v-5z" fill="#FF993E"/><path d="M105 60h5v35h-5V60z"/><path d="M70 65h5v5h-5v-5z" fill="#FFB73E"/><path d="M75 65h5v5h-5v-5z" fill="#192B3E"/><path d="M80 65h15v5H80v-5z" fill="#FFB73E"/><path d="M95 65h5v5h-5v-5z" fill="#3F6B99"/><path d="M100 65h5v5h-5v-5z" fill="#FFB73E"/><path d="M70 70h5v5h-5v-5z" fill="#FFF5E4"/><path d="M75 70h20v5H75v-5z" fill="#FF993E"/><path d="M95 70h5v5h-5v-5z" fill="#192B3E"/><path d="M100 70h5v5h-5v-5z" fill="#FF993E"/><path d="M70 75h5v5h-5v-5z" fill="#FFB73E"/><path d="M75 75h5v5h-5v-5z" fill="#3F6B99"/><path d="M80 75h25v5H80v-5z" fill="#FFB73E"/><path d="M45 80h5v5h-5v-5z" fill="#FFF"/><path d="M70 80h10v5H70v-5z" fill="#FF993E"/><path d="M80 80h5v5h-5v-5z" fill="#3F6B99"/><path d="M85 80h5v5h-5v-5z" fill="#192B3E"/><path d="M90 80h15v5H90v-5z" fill="#FF993E"/><path d="M40 85h5v5h-5v-5z" fill="#FFF"/><path d="M45 85h5v5h5v5H45V85z" fill="#A60000"/><path d="M50 85h5v5h-5v-5z" fill="#FFF5E4"/><path d="M70 85h10v5H70v-5z"/><path d="M80 85h25v5H80v-5z" fill="#FFB73E"/><path d="M30 90h10v5H30v-5z" fill="#FFF"/><path d="M40 90h5v5h-5v-5zm40 0h10v5H80v-5z"/><path d="M90 90h15v5H90v-5z" fill="#FF993E"/><path d="M25 95h5v50h-5V95z" fill="#FFF"/><path d="M30 95h5v15h-5V95z" fill="#192B3E"/><path d="M35 95h5v5h5v5H35V95z"/><path d="M40 95h10v5h5v5H45v-5h-5v-5z" fill="#192B3E"/><path d="M50 95h5v5h-5v-5z" fill="#69B2FF"/><path d="M65 95h5v5h-5v-5zm10 0h5v5h5v5H75V95z" fill="#A60000"/><path d="M80 95h5v5h-5v-5z" fill="#FFF5E4"/><path d="M90 95h15v5H90v-5z"/><path d="M55 100h5v5h-5v-5z" fill="#A60000"/><path d="M110 100h5v5h-5v-5z"/><path d="M115 100h5v5h-5v-5z" fill="#192B3E"/><path d="M35 105h5v5h-5v-5z" fill="#3F6B99"/><path d="M40 105h5v5h5v15h-5v5h5v15H40v-10h-5v-25h5v-5z" fill="#FF993E"/><path d="M45 105h10v5H45v-5z"/><path d="M80 105h5v5h-5v-5z" fill="#69B2FF"/><path d="M95 105h5v5h-5v-5z" fill="#A60000"/><path d="M105 105h5v5h-5v-5zm-75 5h5v30h5v5H30v-35z"/><path d="M50 110h5v35h-5v-35z" fill="#69B2FF"/><path d="M55 110h15v5H55v-5z"/><path d="M85 110h5v5h-5v-5z" fill="#A60000"/><path d="M100 110h5v5h-5v-5z"/><path d="M55 115h10v35H55v-15h5v-5h-5v-15z" fill="#FF993E"/><path d="M65 115h5v20h-5v-20z" fill="#69B2FF"/><path d="M70 115h15v5H70v-5zm25 0h5v5h-5v-5z"/><path d="M70 120h5v35h-5v-35z" fill="#FF993E"/><path d="M75 120h5v5h5v5h5v25H75v-35z" fill="#69B2FF"/><path d="M80 120h5v5h-5v-5z" fill="#3F6B99"/><path d="M85 120h10v10h-5v-5h-5v-5z"/><path d="M45 125h5v5h-5v-5z" fill="#192B3E"/><path d="M85 125h5v5h-5v-5z" fill="#3F6B99"/><path d="M55 130h5v5h-5v-5zm35 0h5v25h-5v-25z" fill="#192B3E"/><path d="M35 135h5v5h-5v-5z" fill="#3F6B99"/><path d="M65 135h5v5h-5v-5z" fill="#192B3E"/><path d="M65 140h5v10h-5v-10z" fill="#69B2FF"/><path d="M130 140h5v5h-5v-5z"/><path d="M135 140h5v5h-5v-5zm-105 5h10v5H30v-5z" fill="#FFF"/><path d="M40 145h15v5H40v-5zm80 0h10v5h-10v-5z"/><path d="M130 145h5v5h-5v-5zm-90 5h15v5H40v-5z" fill="#FFF"/><path d="M55 150h15v5H55v-5zm55 0h10v5h-10v-5z"/><path d="M120 150h10v5h-10v-5zm-65 5h15v5H55v-5z" fill="#FFF"/><path d="M70 155h15v5H70v-5z"/><path d="M85 155h5v5h-5v-5z" fill="#3F6B99"/><path d="M90 155h5v5h5v5H85v-5h5v-5zm10 0h10v5h-10v-5z"/><path d="M110 155h10v5h-10v-5zm-40 5h15v5H70v-5zm30 0h10v5h-10v-5zm-15 5h15v5H85v-5z" fill="#FFF"/></svg>
+          </div>
+          <div class="button_detail_projet"><button>Plus de détail</button></div>
+        </div>
+        <div class="box_projet">
+          <div class="titre_projet"><h2>Réalisation d'un site internet</h2></div>
+          <div class="image_projet">
+            <img src="image/actuauto.png" alt="">
+          </div>
+          <div class="button_detail_projet"><button>Plus de détail</button></div>
+        </div>
+        <div class="box_projet">
+          <div class="titre_projet"><h2>Réalisation d'un site internet</h2></div>
+          <div class="image_projet">
+            <img src="image/mom's.png" alt="">
+          </div>
+          <div class="button_detail_projet"><button>Plus de détail</button></div>
+        </div>
+        <div class="box_projet">
+          <div class="titre_projet"><h2>Design d'unne app mobile</h2></div>
+          <div class="image_projet">
+            <img src="image/hotones-logo.png" alt="">
+          </div>
+          <div class="button_detail_projet"><button>Plus de détail</button></div>
+        </div>
+        <div class="box_projet">
+          <div class="titre_projet"><h2>Portfolio Wordpress</h2></div>
+          <div class="image_projet">
+            <img src="image/wordpress-logo.png" alt="">
+          </div>
+          <div class="button_detail_projet"><button>Plus de détail</button></div>
+        </div>
+        <div class="box_projet">
+          <div class="titre_projet"><h2>Montage d'un drone FPV</h2></div>
+          <div class="image_projet">
+            <img src="image/dronefpv.png" alt="">
+          </div>
+          <div class="button_detail_projet"><button>Plus de détail</button></div>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <!-- formulaire de contact -->
+      <div class="formulaire">
+          <form onsubmit="event.preventDefault();">
+              <div class="flex-info">
+                  <div class="nom-info">
+                      <label for="nom">Nom :</label>
+                      <input type="text" id="nom" placeholder="Entrée votre Nom" required>
+                  </div>
+                  <div class="nom-info">
+                      <label for="prenom">Prénom :</label>
+                      <input type="text" name="prenom" id="prenom" required placeholder="Entrée votre Prénom">
+                  </div>
+              </div>
+              <div class="flex-info">
+                  <div class="nom-info">
+                      <label for="email">Email :</label>
+                      <input type="email" name="email" id="email" required placeholder="Entrée votre Email">
+                  </div>
+                  <div class="nom-info">
+                      <label for="tel">Téléphone :</label>
+                      <input type="text" name="tel" id="tel" placeholder="Entrée votre numéro">
+                  </div>
+              </div>
+              <div class="sujet-message">
+                  <label for="sujet">Sujet :</label>
+                  <input type="text" id="sujet" required placeholder="Entrée votre sujet">
+              </div>
+              <div class="sujet-message">
+                  <label for="message">Message :</label>
+                  <textarea  id="message"  rows="10" required placeholder="Entré votre message"></textarea>
+              </div>
+              <div class="btn-submit">
+                  <button onclick="sendMail()" id="envoyer" >Envoyer</button>
+              </div>
+              <div class="btn-submit">
+                  <p id="confirm-send"></p>
+              </div>
+          </form>
+      </div>
+      <!-- Formulaire de contact END -->
+      <!-- Autre information -->
+      <div class="autre-info">
+          <div class="btn-dl"><button><a href="">Téléchargez mon CV</a></button></div>
+          <div class="btn-dl"><button><a href="">Visitez mon Linkedin</a></button></div>
+      </div> 
+      <!-- Autre information END -->
+
+  </section>
 </body>
 </html>

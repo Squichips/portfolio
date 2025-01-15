@@ -2,177 +2,191 @@
     margin: 0;
     padding: 0;
     font-family: 'Rubik', sans-serif;
-
 }
 
 :root{
     --clear: #242629;
-    --dark: #16161a;
+    --dark: #1e1e1e;
     --white: #ffff;
     --greenclear: #3fa796;
 }
-
-/* paramètre  */
-
-.green-background{
-    background-color: var(--greenclear);
-}
-
-.important-txt{
+/* Paramètre */
+.important{
     color: var(--greenclear);
 }
-/* Navigation  */
-nav{
-    background-color: var(--dark);
-    width: 100%;
-    height: 80px;
-    top: 0;
+.upsize{
+    font-size: 45px;
+}
+
+.Navbar{
     position: fixed;
     display: flex;
+    width: 100%;
+    top: 0;
+    height: 80px;
     justify-content: space-between;
-    align-items: center;
-    z-index: 1;
-
+    background-color: var(--dark);
+    z-index: 50;
 }
 
-.nav-logo{
+.logo_nav{
+    
     width: 33%;
-    height: 100%;
-    margin-left: 35px;
+    margin-left: 15px;
     display: flex;
     align-items: center;
-   
+}
+
+.logo_nav h1{
+    color: var(--white);
+    font-size: 30px;
+}
+
+.background_effect{
+    color: white; /* Couleur du texte sur fond rouge */
+    background: linear-gradient(to right, var(--greenclear) 0%, var(--greenclear) 100%);
+    background-size: 0% 100%; /* Commence sans remplissage */
+    background-repeat: no-repeat;
+    padding: 5px;
+    border-radius: 10px;
+    animation: fillBackground 3s ease forwards; /* Animation de remplissage */
+  
     
-
 }
-.nav-logo h1{
-    font-size: 35px;
-    color: white;
+@keyframes fillBackground {
+    0% {
+        background-size: 0% 100%; /* Aucun remplissage au début */
+        
+    }
+    50% {
+     
+    }
+    100% {
+        background-size: 100% 100%; /* Fond rempli complètement */
+    }
 }
 
-.nav-logo span{
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.nav-liste{
-    width: 33%;
-    height: 100%;
+.liste_content{
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.nav-liste ul{
-    display: flex;
-
-}
-
-.nav-liste ul li{
-    list-style-type: none;
-    padding: 0 10px;
-}
-
-.nav-liste ul li a{
-    text-decoration: none;
-    color: var(--white);
-    font-size: 25px;
-}
-
-.nav-contact{
     width: 33%;
-    height: 100%;
+}
+.liste_content ul{
+    width: 100%;
+   display: flex;
+   align-items: center;
+    justify-content: space-around;
+}
+
+.liste_content ul li{
+    list-style-type: none;
+
+}
+
+.liste_content ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.liste_content .active{
+    color: var(--greenclear);
+}
+.button_contact{
     display: flex;
     align-items: center;
     justify-content: end;
-    margin-right: 35px;
+    width: 33%;
+    margin-right: 15px;
 }
 
-.nav-contact button{
+.button_contact button{
+    padding: 5px 20px;
+    font-size: 20px;
+    background-color: var(--greenclear);
     border: none;
-    border-radius: 5px;
     color: var(--white);
-    font-size: 25px;
-    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
 }
-
-/* Navigation barre END */
 
 /* Profils */
 
 .profils{
     background-color: var(--dark);
-    height: calc(100vh - 80px);
     margin-top: 80px;
+    height: calc(100vh - 80px);
+
+}
+
+.profils_contenaire{
+    padding: 0 35px 0 35px;
+    height: 100%;
     display: flex;
     align-items: center;
-   
+    justify-content: center;
+    
 }
-.section-profils{
-    width: 50%;
-    height: 90%;
-    padding-left: 50px;
+.info_content{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 50%;
+    height: 90%;
+    border-right: 2px solid var(--greenclear);
 }
-.profils-info h2 {
-    color: var(--white);
-    font-size: 50px;
+.info_name_age h2{
+    font-size: 35px;
+    color: var(--white) ;
 }
-.profils-info span{
-    color: var(--greenclear);
-    font-size: 60px;
-}
-
-.ligne{
-    background-color: var(--greenclear);
-    margin-top: 10px;
+.line{
+    margin-top: 15px;
     width: 100px;
     height: 10px;
-}
-
-.diplome-loisir{
-    margin-top: 20px;
-}
-.diplome-loisir h3{
-    color: var(--white);
-    font-size: 30px;
-    margin-bottom: 5px;
-}
-.diplome-loisir .important-txt{
- color: var(--greenclear);
-}
-
-.download-btn-cv button{
-    border: none;
     background-color: var(--greenclear);
-    font-size: 20px;
+}
+.diplome-loisir{
+    margin-top: 15px;
     color: white;
-    border-radius: 5px;
-    padding: 5px 10px;
+    font-size: 25px;
 }
 
-.photo-presentation{
-
-width: 50%;
-height: 90%;
-display: flex;
-justify-content: center;
-align-items: center;
-border-left: 5px solid var(--greenclear);
+.btn_cv{
+    margin-top: 15px;
+    
 }
 
-.photo-presentation img{
+.btn_cv button{
+    background-color: var(--greenclear);
+    border: none;
     border-radius: 10px;
-    height: 90%;
-}
-.download-btn-cv{
-    margin-top: 5px;
+    padding: 15px 100px;
+    font-size: 20px;
+    color: var(--white);
 }
 
-/* Profils END */
-/* Mon parcours */
+
+
+
+.imgprofil_content{
+    width: 50%;
+    height: 90%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_profils{
+    width: 50%;
+}
+
+.img_profils img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Parcours */
 
 .parcours{
     background-color: var(--clear);
@@ -184,14 +198,16 @@ border-left: 5px solid var(--greenclear);
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 20px ;
-    padding: 80px 50px;
-    overflow: scroll; 
-    overflow-x: hidden;
-    scrollbar-color: var(--clear) var(--dark);
-    scrollbar-width:thin;
-    height: 80%;
+    padding: 80px 35px;
+    overflow: hidden;
+    height: 74%;
 
 }
+
+.grid-parcours.expanded {
+    height: 100%;
+}
+
 .colonne header h2{
     color: var(--white);
     font-size: 40px;
@@ -292,203 +308,438 @@ border-left: 5px solid var(--greenclear);
     font-weight: bold;
 }
 
-/* Compétence */
+.lireplus{
+    
+    padding: 15px 35px;
+    margin-top: 35px;
+    
+    
+}
+
+.lireplus button{
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    background-color: var(--greenclear);
+    color: var(--white);
+    font-size: 16px;
+}
 
 .competence{
     background-color: var(--dark);
     height: calc(100vh - 80px);
-    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contenaire{
+    
+    height: 90%;
+    width: 100%;
+    margin: 0 35px 0 35px;
+}
+
+.content_liste{
+    
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.liste_grid{
+    border-radius: 15px;
+    margin: 15px;
+    background-color: var(--clear);
+    width: 100%;
+    padding: 20px;
+    box-shadow: 5px 5px 16px black;
+
+}
+.titre_liste_grid{
+    padding-bottom: 15px;
+    text-align: center;
+    
+    
+}
+.titre_liste_grid h2{
+    color: var(--white);
+}
+
+.content_liste_list{
+    background-color: var(--dark);
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    margin-top: 5px;
+    
+}
+.content_liste_list ul li{
+    list-style-type: none;
+    
+    position: relative;
+    
+}
+
+.content_liste_list ul li::before{
+    content: '</>';
+    position: absolute;
+    left: -60px;
+    font-size: 30px;
+    color: var(--greenclear);
+}
+
+.content_liste_list ul li p{
+    color: var(--white);
+    font-size: 30px;
+}
+
+
+
+.content_logiciel{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.liste_grid:hover{
+    box-shadow: 5px 5px 16px var(--greenclear);
+}
+
+.liste_image{
+    border-radius: 15px;
+    padding: 20px;
+    margin: 15px;
+    background-color: var(--clear);
+    width: 100%;
+    box-shadow: 5px 5px 16px black;
+    cursor: pointer;
+    
+}
+
+.liste_image:hover{
+    box-shadow: 5px 5px 16px var(--greenclear);
+}
+
+.titre_image_grid{
+    padding-bottom: 15px;
+    text-align: center;
+    border-bottom: 3px solid var(--dark);
+}
+
+.titre_image_grid h2{
+    color: var(--white);
+}
+
+
+.carousel {
+    position: relative;
+    width: 100%; 
+    overflow: hidden;
+    border-radius: 15px;
+    height: 90%;
+}
+
+/* Conteneur des groupes */
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%; 
+    height: 100%;
+}
+
+/* Groupe contenant 3 éléments */
+.carousel-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+/* Styles des conteneurs individuels */
+.contenaire_logiciel {
+    background-color: var(--dark);
+    height: 90%;
+    width: 30%; /* Chaque logiciel prend 30% de la largeur pour s'adapter à 3 par groupe */
+    border-radius: 15px;
+    margin: 5px;
+}
+
+/* Conteneur de l'image */
+.img_div {
+    width: 100%;
+    height: 80%;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img_div svg {
+    width: 100px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+/* Titre du logiciel */
+.logiciel_titre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--greenclear);
+    height: 20%;
+    border-radius: 15px;
+}
+
+.logiciel_titre p {
+    color: white;
+    font-size: 25px;
+}
+
+/* Boutons de navigation */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+.carousel-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+
+/* Projet */
+
+.projet{
+    background-color: var(--clear);
+    height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.content_projet{
+    display: grid;
+    align-items: center;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+
+    height: 90%;
+    width: 100%;
+    margin: 0 35px 0 35px;
+    
+}
+
+.box_projet{
+    background-color: var(--dark);
+    height: 90%;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 16px black;
+    position: relative;
+    
+}
+.button_detail_projet{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(3px); /* Niveau de flou */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+    
+
+}
+.button_detail_projet button{
+    background-color: var(--greenclear);
+    padding: 10px 40px;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-size: 18px;
+}
+
+.box_projet:hover .button_detail_projet{
+    box-shadow: 5px 5px 16px var(--greenclear);
+    display: flex;
+}
+
+.titre_projet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 20%;
+}
+.titre_projet h2{
+    color: white;
+    
+
+}
+.image_projet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+}
+
+.image_projet svg, .image_projet img {
+    width: 30%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+/* contact */
+
+.contact{
+    width: 100%;
+    padding: 0px 20px;
+    height: calc(100vh - 80px);
+    background-color: #16161A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulaire{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 80%;
+    background-color: red;
+}
+form{
+    width: 100%;
+}
+
+form label{
+    color: white;
+    font-size: 18px;
+    margin: 0px 5px 5px;
+}
+
+form input{
+    height: 35px;
+    border-radius: 15px;
+    border: none;
+    padding: 10px;
+    background-color: #242629;
+    color: #3FA796;
+    font-size: 17px;
+    box-shadow: 8px 9px 14px -3px #070707;
+    width: 100%;
+
+}
+
+form textarea {
+    background-color: #242629;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    color: #3FA796;
+    font-size: 17px;
+    box-shadow: 8px 9px 14px -3px #070707;
+    resize: none;
+
+}
+form textarea:focus ,
+form input:focus
+{
+    box-shadow: 8px 9px 14px -3px #3FA796;
+}
+.flex-info{
+    display: flex;
+    width: 100%;
+}
+.sujet-message{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    
+}
+
+.btn-submit button{
+    margin-top: 10px;
+    background-color: #3FA796;
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+    color: white;
+    font-size: 17px;
+    box-shadow: 8px 9px 14px -3px #070707;
+    width: 100%;
+    cursor: pointer;
+
+}
+.nom-info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding:10px 15px;
+    
+}
+
+
+
+.autre-info{
+    width: 50%;
+    height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.language-other{
-    height: 50%;
-    display: flex;
-    padding-top: 80px;
-}
-
-.langage{
-    background-color: var(--clear);
-    width: 50%;
-    height: 100%;
-    border-radius: 15px;
-    margin-right: 5px;
-    
-}
-.content-langage{
-    
-    height: 50%;
-    border-radius: 15px 15px 0 0;
-}
-.comp-title{
-    padding: 10px;
-    /* background-color: red; */
-    text-align: center;
-    margin: 0px 35px;
-    border-bottom: 2px solid var(--dark);
-}
-.comp-title h2{
-    
-    color: var(--white);
-    font-size: 30px;
-}
-
-.comp-list{
-
-    height: 80%;
-    display: flex;
-    justify-content: center;
     align-items: center;
 }
-.content-apprentissage{
-    border-radius:   0px 0px 15px 15px ;
-    height: 50%;
-  
+.btn-dl{
+    padding: 5px 0px;
 }
-.apprentissage-title{
-    padding: 10px;
-    /* background-color: red; */
-    text-align: center;
-    margin: 0px 35px;
-    border-bottom: 2px solid var(--dark);
-    
-}
-.apprentissage-title h2{
-    color: var(--white);
-    font-size: 30px;
-}
-.comp-list ul{
-    position: relative;
-    padding: 10px;
-
-}
-.comp-list ul li{
-    list-style-type: none;
-    color: var(--white);
-    font-size: 25px;
-    padding: 5px;
-}
-.comp-list ul li::before{
-    content: '➞';
-    position: absolute;
-    left: -30px;
-
+.btn-dl button{
+    border: none;
+    box-shadow: 8px 9px 14px -3px #070707;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: #3FA796;
+    cursor: pointer;
 }
 
-.list-apprentissage{
 
-    height: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.list-apprentissage ul{
-    position: relative;
-    padding: 10px;
-
-}
-
-.list-apprentissage ul li{
-    list-style-type: none;
-    color: var(--white);
-    font-size: 25px;
-    padding: 5px;
-}
-
-.list-apprentissage ul li::before{
-    content: '➞';
-    position: absolute;
-    left: -30px;
-
-}
-
-.Autre{
-    background-color: var(--clear);
-    width: 50%;
-    height: 100%;
-    border-radius: 15px;
-    margin-left: 5px;
-
-}
-
-.autre-title{
-    padding: 10px;
-    color: var(--white);
-    text-align: center;
-    margin: 0px 35px;
-    border-bottom: 2px solid var(--dark);
-    
-}
-
-.liste-autre{
-
-    width: 100%;
-    height: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.liste-autre ul{
-    position: relative;
-    padding: 10px;
-
-}
-
-.liste-autre ul li{
-    list-style-type: none;
-    color: var(--white);
-    font-size: 25px;
-    padding: 5px;
-}
-
-.liste-autre ul li::before{
-    content: '➞';
-    position: absolute;
-    left: -30px;
-
-}
-
-.logiciel-utiliser{
-    width: 100%;
-    height: 30%;
-    background-color: var(--clear);
-    margin-top: 10px;
-    border-radius: 15px;
-}
-
-.title-logiciel{
-    padding: 10px;
-    /* background-color: red; */
-    text-align: center;
-    margin: 0px 35px;
-    border-bottom: 2px solid var(--dark);
-}
-
-.title-logiciel h2{
+.btn-dl button a{
+    text-decoration: none;
+    font-size: 20px;
     color: white;
 }
 
-.liste-logiciel{
-  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-}
-
-
-.liste-logiciel ul{
-    display: flex;
-    align-items: center;
-}
-
-.liste-logiciel ul li{
-    list-style-type: none;
-    padding: 20px;
-    display: flex;
+#confirm-send{
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 20px ;
+    color: white;
 }
